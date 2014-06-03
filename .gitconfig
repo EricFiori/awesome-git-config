@@ -6,6 +6,8 @@
 	#show list of filenames modified on current branch (pre merge)
 	branch-changes = !bash -c 'git diff --name-only `git merge-base master HEAD` HEAD' -
 
+	branch-changes-diff = !bash -c 'git diff `git merge-base master HEAD` HEAD' -
+
 	# short aliases
 	st = status 
 	co = checkout
